@@ -1,0 +1,186 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #FAFAFA;
+}
+
+img{
+	width: 100%;
+	display: block;
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.header{
+	position: relative;
+	height: 750px;
+}
+
+.cont-header{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.txt-header{
+	width: 700px;
+	margin-top:100px; 
+	margin-left: 25px;
+	color: white;
+}
+
+.txt-header h1{
+	font-size: 60px;
+	font-family: sans-serif;
+}
+
+.txt-header h2{
+	margin-top: 30px;
+	color: #BEBEBE;
+	font-size: 20px;
+	font-family: 'Xanh Mono', monospace;
+}
+
+.txt-header a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 10px 30px;
+	margin-top: 50px; 
+	border:2px solid white;
+	border-radius: 30px;
+}
+
+.txt-header a:hover{
+	background: white;
+	color: black;
+}
+
+.menu{
+	padding:25px;
+	align-self: flex-end;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.menu a{
+	margin-right: 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.social a .fa-facebook-f{
+	padding: 15px;
+	background: #3b5998;
+	border-radius: 30px;
+}
+
+.social a .fa-facebook-f:hover{
+	background: #1B3977;
+}
+
+.social a .fa-youtube{
+	padding: 15px;
+	background: #FF0000;
+	border-radius: 30px;
+}
+
+.social a .fa-youtube:hover{
+	background: #900101;
+}
+
+.social a .fa-twitter{
+	padding: 15px;
+	background: #00acee;
+	border-radius: 30px;
+}
+
+.social a .fa-twitter:hover{
+	background: #00719D;
+}
+
+.nave .fa-bars{
+	display: none;
+}
+
+.nave a:hover{
+	border-bottom: 1px solid white;
+}
+
+.img-header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1000;
+}
+
+.img-header:before{
+	content: '';
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.img-header img{
+	height: 750px;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 800px){
+	.txt-header{
+		width: auto; 
+	}	
+
+	.txt-header h1{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	.img-header img{
+		height: 600px;
+	}
+
+	.menu{
+		padding: 15px;
+	}
+
+	.links{
+		display: none;
+	}
+
+	.nave .fa-bars{
+		display:block;
+		font-size: 30px;
+		padding: 10px;
+		background: white;
+		border-radius: 30%;
+	}
+
+	.contenedor{
+		height: 600px;
+	}
+
+	.header{
+		height: 600px;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+	 .social{
+		display: none;
+	}
+}
